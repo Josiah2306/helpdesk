@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Dashboard</h2>
+
+<div class="card shadow mt-4">
+    <div class="card-body">
+        <h4>Total Tickets: {{ total }}</h4>
+
+        <a href="/tickets" class="btn btn-primary mt-3">View Tickets</a>
+        <a href="/tickets/new" class="btn btn-success mt-3">Create Ticket</a>
+    </div>
+</div>
+
+{% endblock %}

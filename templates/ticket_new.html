@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Create New Ticket</h2>
+
+<div class="card shadow mt-4">
+    <div class="card-body">
+
+        <form method="POST">
+
+            <label>Title</label>
+            <input type="text" name="title" class="form-control mb-3" required>
+
+            <label>Description</label>
+            <textarea name="description" class="form-control mb-3" rows="5" required></textarea>
+
+            <button class="btn btn-primary">Submit Ticket</button>
+
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
